@@ -21,23 +21,22 @@ stages {
   }
  }
  stage('Testing'){
-			parallel {
-				stage ('Functional Testing'){
+						stage ('Functional Testing'){
 					steps {
 						script {
 							echo "Functional Testing"
 							}
 					}
-				}
+				}}
     
      stage('Consumer'){
-			parallel {
+		
 				stage ('User Acceptance Testing'){
 					steps {
 						script {
 							echo "User Acceptance Testing"
 							}
 					}
-				}
+				}}
 }
 }
