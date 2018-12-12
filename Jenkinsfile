@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage('CodeCheckOut') {
-            ssteps {
+            steps {
                 script {
                     checkout scm
                     def mvnHome = tool 'maven-3'
