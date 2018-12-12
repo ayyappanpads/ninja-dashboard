@@ -20,16 +20,14 @@ stages {
     }
   }
  }
- stage('Testing'){
 						stage ('Functional Testing'){
 					steps {
 						script {
 							echo "Functional Testing"
 							}
 					}
-				}}
+				}
     
-     stage('Consumer'){
 		
 				stage ('User Acceptance Testing'){
 					steps {
@@ -37,6 +35,6 @@ stages {
 							echo "User Acceptance Testing"
 							}
 					}
-				}}
+				}
 }
 }
